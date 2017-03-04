@@ -1,0 +1,1217 @@
+      <!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"b908402cd3","applicationID":"1237919,13960630","transactionName":"clhXTRQOW10BQBsRWVZSShYVCVhG","queueTime":1,"applicationTime":54,"agent":"","atts":"ShVMG1waFUQWXhZbGllDTUlcThhGE0UaA01WRF9cAwUZUgtfG0MUE1lYTQ8OWW4XXkEGGgsVXVgICERZAF1XFFVUWU1YFBgVHUZWVRVZU1ZKXERbFUEWXVAUW0VeVlc5AENdBVxAAGcGFRUbFAREQQtcRwhaXVJmTQMAWhNeEEEPW11WUFQDBRUdRkBRDFdFUmZQFkMNE1cFGlABABkMD0hQABNIEEAAX0IVAxsJFV9UFhBJHA=="}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOGÁRÉTEL</title>
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+    <link href="css/theme.css" rel="stylesheet" />
+ <!--   <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@atasteofinsects" />
+    <meta name="twitter:title" content="BUGSfeed" />
+    <meta name="twitter:description" content="Eating insects is nothing new – but it's also the future. Still, many of us find it disgusting. We’re on a mission to find out more – not to sell you anything. Share our curiosity and join us in exploring a taste of insects!" />
+
+    <meta name="twitter:image:src" content="http://" />
+    <meta name="twitter:domain" content="http://www.bugfood.org/" /> -->
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+  <meta name="google-site-verification" content="ikc9ITGT7cdW17SILYNIt7lu5tfNi19kUxCA6DTCKZ0" />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="B7zs6LKiLga4sg6Y1k5dCDZo7jbIt89sZLH7dAV+O/g=" name="csrf-token" />
+  <link rel="canonical" href="http://www.bugfood.org/" />
+    <meta name="Title" content="BUGSfeed - a taste of insects">
+    <meta property="og:title" content="BUGSfeed"/>
+  <meta property="og:url" content="http://www.bugfood.org/">
+    <meta property="og:description" content="Eating insects is nothing new – but it&#39;s also the future. Still, many of us find it disgusting. We’re on a mission to find out more – not to sell you anything. Share our curiosity and join us in exploring a taste of insects!">
+    <meta property="og:type" content="article">
+      <link rel="image_src" href="img/bugsfeed_plate.jpg" />
+      <meta property="og:image" content="img/bugsfeed_plate.jpg" />
+  <meta property="og:site_name" content="BUGSfeed"/>
+<script type="text/javascript">
+  var NB = NB || {};
+  NB.environment = "production";
+  NB.pageId = "32";
+  NB.Liquid = NB.Liquid || {};
+</script>
+
+<script type="text/javascript">
+    //<![CDATA[
+      window._auth_token_name = "authenticity_token";
+      window._auth_token = "B7zs6LKiLga4sg6Y1k5dCDZo7jbIt89sZLH7dAV+O/g=";
+    //]]>
+</script>
+  <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="all">
+      <link rel="icon" type="image/x-icon" href="img/favicon.gif" />
+<script src="js/main-b.js"></script>
+<script type="text/javascript">
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+    js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+</script>
+<script type="text/javascript">
+  NB.FBAppId = '126739610711965';
+</script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-71585242-1']);
+   	_gaq.push(['_setDomainName', 'none']);
+    _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_setCustomVar', 1, 'UGC', 'false', 3]);
+      _gaq.push(['_setCustomVar', 1, 'Page type', 'Basic', 3]);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script type="text/javascript">
+    var _qevents = _qevents || [];
+    (function() {
+     var elem = document.createElement('script');
+     elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + "js/quant.js";
+     elem.async = true;
+     elem.type = "text/javascript";
+     var scpt = document.getElementsByTagName('script')[0];
+     scpt.parentNode.insertBefore(elem, scpt);
+    })();
+  </script>
+  <!-- <script type="text/javascript">
+    if (document.cookie.indexOf('splash_welcome') < 0) {
+      document.cookie = 'splash_welcome=1; expires=2018-02-16 13:38:45 +0100';
+      var params = window.location.search.length > 0 ? window.location.search + '&splash=1' : '?splash=1'
+      window.location = 'http://www.bugsfeed.com/welcome' + params;
+    }
+  </script> -->
+    <meta property="fb:admins" content="512983880"/>
+    <meta property="fb:app_id" content="559031220928303"/>    
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript">
+      NB.appConfig.userIsLoggedIn = false;
+    </script>
+  </head>
+  
+  <body class="aware-theme v2-theme page-type-basic page-pages-show-basic js bugs-neutral homepage">
+<!-- _nav.html -->
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+ 
+  <div class="brand-container"><h1><a class="navbar-brand" href="/"><img alt="BUGSfeed - a taste of insects" src="img/bugsfeed_logo.png"></a></h1>
+    <div class="subheadline">a taste of insects</div>
+  </div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="menu-collapse" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <div class="nav-all-boxes">
+          <div class="nav-box bugs-orange">
+
+            <li class=" dropdown">
+              <a href="why_eat_insects" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Miért? </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/do_insects_taste_good">Jóízű?</a></li>
+                <li><a href="/are_insects_healthy">Egészséges?</a></li>
+                <li><a href="/can_they_save_the_world">Megmentjük a világot?</a></li>
+                <li><a href="/who_is_eating_insects">Ki eszik bogarat?</a></li>
+              </ul>
+            </li>
+          </div>
+          <div class="nav-box bugs-super-green">
+            <li class=" dropdown">
+              <a href="/how_can_i_try_insects" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Hogy? </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/know_your_bugs">Know your bugs</a></li>
+                <li><a href="/recipes">Prepare and cook them</a></li>
+                <li><a href="/find_them_where_you_are">Find them where you are</a></li>
+                <li><a href="/directory">Stores & Restaurants</a></li>
+                <li><a href="/events">Tastings & Events</a></li>
+              </ul>
+            </li>
+          </div>
+          <div class="nav-box bugs-light-grey">
+            <li class=" dropdown">
+              <a href="/whats_stopping_me" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mi? </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/is_it_disgusting">Is it disgusting?</a></li>
+                <li><a href="/are_they_dangerous">Are they dangerous?</a></li>
+                <li><a href="/could_eating_insects_be_illegal">Could it be illegal?</a></li>
+                <li><a href="/can_it_go_wrong">Can it go wrong?</a></li>
+              </ul>
+            </li>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /_nav.html -->
+<!-- _features.html -->
+<div id="carousel-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators hidden-xs">
+    <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-generic" data-slide-to="1" ></li>
+    <li data-target="#carousel-generic" data-slide-to="2" ></li>
+    <li data-target="#carousel-generic" data-slide-to="3" ></li>
+    <li data-target="#carousel-generic" data-slide-to="4" ></li>
+    <li data-target="#carousel-generic" data-slide-to="5" ></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <a href="https://youtube.com/#" class="fancybox-media">
+        <img src="img/BUGS_trailer.jpg" alt="Watch the trailer for BUGS">
+        <div class="carousel-caption">
+          <h1>Nézd meg az előzetest <i class="fa fa-play-circle"></i></h1>
+        </div>
+      </a>
+    </div>
+    <div class="item ">
+      <a href="/why_eat_insects">
+        <img src="img/why_header.jpg" alt="Why should I eat insects?">
+        <div class="carousel-caption">
+          <h1>Miért egyek bogarat?</h1>
+        </div>
+      </a>
+    </div>
+    
+    <div class="item ">
+      <a href="film">
+        <img src="img/BUGS_Mailbanner_Ben1.jpg" alt="">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </a>
+    </div>
+    <div class="item ">
+      <a href="how_can_i_try_insects">
+        <img src="img/how_header.jpg?1472054734" alt="How can I try insects?">
+        <div class="carousel-caption">
+          <h1>Hogy...?</h1>
+        </div>
+      </a>
+    </div>
+    <div class="item ">
+      <a href="/screenings">
+        <img src="img/BUGS_denmark.jpg?1472055008" alt="BUGS on the big screen">
+        <div class="carousel-caption">
+          <h1>Bogarak itt-ott-amott</h1>
+        </div>
+      </a>
+    </div>
+    <div class="item ">
+      <a href="/whats_stopping_me">
+        <img src="img/what_header.jpg?1472054786" alt="What's stopping me?">
+        <div class="carousel-caption">
+          <h1>Mi...?</h1>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  
+</div>
+<!-- /_features.html -->
+    <div class="main-container" id="middle">
+      <div class="main container clearfix">
+        <div class="gutterpadding-h"></div>
+<!-- _columns_2.html -->
+<div class="column content-pages-show-basic">
+  <div class="row row-eq-height">
+    <div class="col-sm-8 mainbar">
+      <div class="all-the-main">
+<!--        
+        <div class="hidden-xs">
+          <gcse:searchresults gname="desktopsearch"></gcse:searchresults>
+        </div>
+-->        
+        <div id="flash_container">
+</div>
+<!-- _breadcrumbs.html -->
+<!-- /_breadcrumbs.html -->
+<!-- _homepage_excerpt.html -->
+<div class="homepage-excerpt page-33 bugs-brown excerpt-basic">
+  <a href="/why_eat_insects">
+    <div class="excerpt-image" style="background: url('img/why_excerpt_large.jpg') no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;">
+    </div>
+  </a>
+  <h3 class="excerpt-title"><a href="why_eat_insects.htm">Miért egyek bogarat?</a></h3>
+  <div class="excerpt-content">Ez meg az így úgy amúgy joh jh lih jhlihuishjshiush ejghnlkjhisdhiuhglgh<a class="pull-right" href='why_eat_insects'>&nbsp;Dig&nbsp;a&nbsp;little&nbsp;deeper&nbsp;&rarr;</a>
+  </div>
+  <!-- Redirect page -->
+</div> <!-- .homepage-excerpt -->
+
+<!-- /_homepage_excerpt.html -->
+
+
+
+<!-- _homepage_excerpt.html -->
+
+
+<div class="homepage-excerpt page-40 bugs-green excerpt-basic">
+  
+  
+  
+  
+  
+  
+  <a href="how_can_i_try_insects">
+    <div class="excerpt-image" style="background: url('img/how_excerpt_large.jpg') no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;">
+    </div>
+  </a>
+  
+  
+  <h3 class="excerpt-title"><a href="how_can_i_try_insects">How can I try insects?</a></h3>
+  
+  <div class="excerpt-content">Tempted? All the facts on how to find and eat insects is in this section, from foraging and cooking to restaurants and suppliers.<a class="pull-right" href='how_can_i_try_insects'>&nbsp;Dig&nbsp;a&nbsp;little&nbsp;deeper&nbsp;&rarr;</a>
+  </div>
+  
+  
+    
+  <!-- Redirect page -->
+  
+  
+</div> <!-- .homepage-excerpt -->
+
+<!-- /_homepage_excerpt.html -->
+
+
+
+<!-- _homepage_excerpt.html -->
+
+
+<div class="homepage-excerpt page-47 bugs-grey excerpt-basic">
+  
+  
+  
+  
+  
+  
+  <a href="whats_stopping_me">
+    <div class="excerpt-image" style="background: url('img/what_excerpt_large.jpg') no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;">
+    </div>
+  </a>
+  
+  
+  <h3 class="excerpt-title"><a href="whats_stopping_me">What's stopping me from eating insects?</a></h3>
+  
+  <div class="excerpt-content">Aside from the ‘yuck’ factor, you might be worried that edible insects are poisonous, or even illegal. We address the most common stumbling blocks, and look at the big question of ‘what if this all goes wrong’ – is a corporate takeover of edible insects on the cards? <a class="pull-right" href='whats_stopping_me'>&nbsp;Dig&nbsp;a&nbsp;little&nbsp;deeper&nbsp;&rarr;</a>
+  </div>
+  
+  
+    
+  <!-- Redirect page -->
+  
+  
+</div> <!-- .homepage-excerpt -->
+
+<!-- /_homepage_excerpt.html -->
+
+
+
+
+<!-- _latest_posts.html -->
+<h4 class="related-headline">What's buzzing?</h4>
+
+
+
+  
+
+
+
+
+
+
+
+<div class="related-post bugs-green">
+  <div class="row row-eq-height">
+    
+    <div class="col-xs-3 col-sm-2" style="background: url('img/cricket_reactor_Jakub_Dzamba_1.jpg') no-repeat center center; background-size: cover;">
+      <a class="related-post-img" href="insect_city_utopia"></a>
+    </div>
+    <div class="col-xs-9 col-sm-10">
+      
+      <span class="more-about"><strong><a href="find_them_where_you_are">Find them where you are</a></strong> &middot; Jen Stout &middot; 23 Oct</span>
+      <h4><a href="insect_city_utopia">Insect City Utopia: Inside the 'Cricket Reactor'</a></h4>
+      <p class="truncate-100" data-truncate="100">
+        Jakub Dzamba did not stop at a consumer-friendly countertop farm, but has imagined whole urban landscapes that have the mass production of edible insects built in to their fabric, with heat, warmth, waste and sustainability all addressed. As is often the case with new design and architecture, it's feels simultaneously like far-fetched science fiction, and something that's just around the corner.
+        
+        <a class="pull-right" href="insect_city_utopia">More &rarr;</a></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<div class="related-post bugs-brown">
+  <div class="row row-eq-height">
+    
+    <div class="col-xs-3 col-sm-2" style="background: url('img/stingless_bee_honey.jpg') no-repeat center center; background-size: cover;">
+      <a class="related-post-img" href="stingless_bee_honey_uganda"></a>
+    </div>
+    <div class="col-xs-9 col-sm-10">
+      
+      <span class="more-about"><strong><a href="who_is_eating_insects">Who eats insects?</a></strong> &middot; BUGSfeed &middot; 08 Sep</span>
+      <h4><a href="stingless_bee_honey_uganda">Uganda: No stings attached – the most delicious honey</a></h4>
+      <p class="truncate-100" data-truncate="100">
+        “Like squeezing honey out of mud! Like magic mud!” 
+The African Stingless Bee in a clip from BUGS the film, currently in cinemas in Denmark and other Nordic countries.
+        
+        <a class="pull-right" href="stingless_bee_honey_uganda">More &rarr;</a></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<div class="related-post bugs-green">
+  <div class="row row-eq-height">
+    
+    <div class="col-xs-3 col-sm-2" style="background: url('img/quiche.jpg') no-repeat center center; background-size: cover;">
+      <a class="related-post-img" href="quiche_lorraine_avec_ver_de_terre"></a>
+    </div>
+    <div class="col-xs-9 col-sm-10">
+      
+      <span class="more-about"><strong><a href="recipes">Prepare and cook them</a></strong> &middot; Jen Stout &middot; 03 Sep</span>
+      <h4><a href="quiche_lorraine_avec_ver_de_terre">Quiche Lorraine avec Ver de Terre</a></h4>
+      <p class="truncate-100" data-truncate="100">
+        Here's a recipe for our Bug of the Week: the earthworm!
+        
+        <a class="pull-right" href="quiche_lorraine_avec_ver_de_terre">More &rarr;</a></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+<h4 class="related-headline">Events, screenings & tastings</h4>
+
+
+
+<!-- /_latest_posts.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="like-page">
+  <strong>Do you like this site?</strong>
+  
+<!-- _like_page.html -->
+<a href="contact"><img src="img/ant_writing.png" class="contact-ant" /></a>
+
+<div class="sharetable padtop">
+  
+  <div class="facebook-cell">
+    <div class="fb-like" data-href="http://www.bugfood.org/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+  </div>
+  <div class="twitter-cell">
+    
+    <a href="https://#" class="twitter-hashtag-button" data-count="none" data-text="BUGSfeed - a taste of insects" data-via="atasteofinsects" data-url="http://www.bugfood.org/">Tweet #BUGSfeed</a>
+    
+  </div>
+<!--  <div class="gplus-cell"><g:plusone count="false" size="medium"></g:plusone></div> -->
+  
+</div>
+
+<!-- /_like_page.html -->
+
+</div>
+
+
+
+<!-- _related_posts.html -->
+
+
+
+
+
+
+<!-- /_related_posts.html -->
+
+
+
+
+
+
+
+        
+        
+        
+      </div>
+      
+      <div class="mainbar-filler" style="background: url('img/BUGSfeed_splash.jpg') no-repeat left bottom; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
+      
+      
+    </div>
+    <!-- .left_column -->
+    
+    <div class="col-sm-4 sidebar">
+      
+      <div class="visible-xs">
+        <div class="gutterpadding-h"></div>
+      </div>
+      
+      
+      
+      
+      <div class="mission-statement">
+        A bogárevés bla-bla hjhju hiuh iuhiuhiu hiuhiu hiudhui iuh sdh hdjhgshg ruh siuhgiusdh riuhfdhgisdh idghjdhf sidh giush dgh
+      </div>
+      
+      <div class="form-wrap" id="disclaimer">
+        <div class="form">
+          <a href="cookies"><h4>Cookies!</h4></a>
+          <p>Not made from cricket flour... For this site to work properly, you agree to the use of cookies. <a href="cookies">Policy &rarr;</a></p>
+        </div>
+      </div>
+      <div class="about-section">
+        <a href="who"><h4>Ők is velünk bogaraznak</h4></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="about">Bogárétel csapat</a></li>
+          <li><a href="bugs_the_film">BUGS film team</a></li>
+          <li><a href="nordic_food_lab">Nordic Food Lab team</a></li>
+        </ul>
+      </div>
+      <div class="social-buttons">
+        <a href="swarm"><h4>Swarm & buzz!</h4></a>
+        <a href="http://twitter.com/#/" target="_blank">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-spin"></i>
+          </span>
+        </a>
+        <a href="http://facebook.com/#/" target="_blank">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-spin"></i>
+          </span>
+        </a>
+        <a href="https://www.instagram.com/#/" target="_blank">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-instagram fa-stack-1x fa-spin"></i>
+          </span>
+        </a>
+        <a href="/swarm">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-bug fa-stack-1x fa-spin"></i>
+          </span>
+        </a>
+      </div>
+      
+      
+      <script>
+        (function() {
+          var cx = '002772277042875406240:ipli6mmdopq';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      
+<!--      <div class="hidden-xs">
+        <gcse:searchbox gname="desktopsearch"></gcse:searchbox>
+      </div> 
+      
+      <div class="visible-xs">
+        <gcse:searchbox gname="mobilesearch"></gcse:searchbox>
+        <gcse:searchresults gname="mobilesearch"></gcse:searchresults>
+      </div>
+      -->
+      
+      
+      
+      <div class="sidebar-BOTW">
+        
+        <img class="pull-right botw-image" src="img/danish_ant.png" />
+<h4>BUGSfeed DK</h4>
+
+
+
+
+<h3><a href="undervisningsmateriale">Brug BUGS i under-visningen</a></h3>
+<p>"Fascinerende, underholdende, lærerig. Genial for større børn." Sådan skriver Filmmagasinet EKKO i deres anmeldelse af dokumentarfilmen BUGS. Ekstra Bladet supplerer: “Oplagt som pensum i folkeskolens ældre klasser.”
+  <a class="pull-right" href="undervisningsmateriale">&nbsp;Læs &rarr;</a>
+</p>
+
+<a href="undervisningsmateriale"><img src="img/PosterWeb_Horizontal.png" /></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div align="center">
+<p>I anledning af den danske biografpremiere på BUGS, der kører fra 7. September vil vi her på BUGSfeed bringe en række indlæg på dansk &mdash; eller om Danmark. </p>
+ <a class="btn submit-btn btn-primary" href="tags/denmark">Artikler</a>
+  <a class="btn submit-btn btn-primary" href="visninger">Biografer</a>
+</div>
+        
+      </div>   
+      
+      
+      <div class="watch-trailer">
+        <h4>The Film</h4>
+        <img src="img/Square_transparent.png?1463389347" />
+        <div class="play-button"><a href="https://youtube.com/#" class="fancybox-media"><i class="fa fa-play-circle fa-5x"></i></a></div>
+        
+        <a class="btn submit-btn btn-primary" href="film">Learn more</a>
+        <a class="btn submit-btn btn-primary" href="join">Notify me</a>
+        
+      </div>
+      
+      
+      <div class="sidebar-BOTW">
+        
+        <img class="pull-right botw-image" src="img/ant_BOTW.png" />
+<h4>Bug of the Week (22)</h4>
+
+
+<h3><a href="stingless_bee">Stingless Bee</a></h3>
+<p>Delicious honey with no sting: the perfect bee? Meet our BUG OF THE WEEK.
+<a class="pull-right" href="stingless_bee">&nbsp;Read &rarr;</a>
+</p>
+
+<a href="stingless_bee"><img src="img/stingless_bee_1.jpg" /></a>
+
+
+<ul>
+  
+    <li><a href="stingless_bee">Stingless Bee</a></li>
+  
+    <li><a href="earthworm">Earthworm</a></li>
+  
+    <li><a href="black_soldier_fly">Black Soldier Fly</a></li>
+  
+    <li><a href="june_beetle">June Beetle</a></li>
+  
+    <li><a href="silkworm">Silkworm</a></li>
+  
+    <li><a href="mopane_caterpillar">Mopane Caterpillar</a></li>
+  
+    <li><a href="escamol_ant_larva">Escamol (Ant Larva)</a></li>
+  
+    <li><a href="cheese_fly_larva">Cheese Fly Larva </a></li>
+  
+    <li><a href="waxworm">Waxworm</a></li>
+  
+    <li><a href="cockroach">Cockroach</a></li>
+  
+    <li><a href="locust">Locust</a></li>
+  
+    <li><a href="wasp">Wasp</a></li>
+  
+    <li><a href="termite">Termite</a></li>
+  
+    <li><a href="crickets">Cricket</a></li>
+  
+    <li><a href="cockchafer">Cockchafer</a></li>
+  
+    <li><a href="grasshopper">Grasshopper</a></li>
+  
+    <li><a href="asian_giant_hornet">Asian Giant Hornet</a></li>
+  
+    <li><a href="palm_weevil">Palm Weevil</a></li>
+  
+    <li><a href="mealworm">Mealworm</a></li>
+  
+    <li><a href="giant_water_bug">Giant Water Bug</a></li>
+  
+    <li><a href="western_honeybee">Western Honeybee</a></li>
+  
+    <li><a href="red_wood_ant">Red Wood Ant</a></li>
+  
+</ul>
+
+        
+      </div>         
+      
+      
+      
+      
+      
+      
+      
+      
+      
+<!-- _signup_form.html -->
+
+
+<div class="email-signup form">
+  
+  <h4>Keep bugging me!</h4>
+  <form id="home_page_new_signup_form" class="ajaxForm signup_form" method="POST" action="/forms/signups" enctype="multipart/form-data"><input name="authenticity_token" type="hidden" value="B7zs6LKiLga4sg6Y1k5dCDZo7jbIt89sZLH7dAV+O/g="/><input name="page_id" type="hidden" value="32"/><input name="return_to" type="hidden" value="http://www.bugfood.org/"/><div class="email_address_form" style="display:none;" aria-hidden="true"><p><label for="email_address">Optional email code</label><br/><input name="email_address" type="text" class="text" id="email_address" autocomplete="off"/></p></div>
+  <input id="page_id" name="page_id" type="hidden" value="17" /><div class="form-errors"></div>
+  
+  <div class="form-group">
+  
+      <input required="" class="text form-control" id="signup_email" name="signup[email]" placeholder="Email address" type="email" />	
+        <input class="submit-button btn btn-primary" type="submit" name="commit" value="Join the swarm" />
+
+  </div>
+  
+  <div class="form-submit"></div>
+  </form>
+</div>
+
+
+<!-- /_signup_form.html -->
+
+      
+      
+      
+      <div class="supporter-nav btn-group-vertical" role="group">
+        <h4>My BUGSfeed</h4>
+        <a class="btn btn-default supporter-nav-btn" href="#"><i class="icon-facebook-squared"></i> Sign in with Facebook</a>
+        <a class="btn btn-default supporter-nav-btn" href="#"><i class="icon-twitter-squared"></i> Sign in with Twitter</a>
+        <a class="btn btn-default supporter-nav-btn" href="/login"><i class="icon-user"></i> Sign in with Email</a>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="sidebar-filler" style="background: url('img/bugs-grey.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"></div>
+      
+      
+      
+      
+      
+    </div>
+    <!-- .right-column -->
+    
+  </div>
+  
+</div> <!-- .column -->
+
+<!-- /_columns_2.html -->
+
+        
+        
+        
+        
+        <div class="footer-nav hidden-xs">
+          <div class="gutterpadding-h"></div>
+          <div class="row row-eq-height">
+            
+            
+            <div class="col-sm-4">
+              <div class="footer-nav-box bugs-brown">
+                <a class="nav-headline" href="/why_eat_insects">Why should I eat insects? </a>
+                <ul class="dropdown-menu" role="menu">
+                  
+                  
+                  <li><a href="/do_insects_taste_good">Do they taste good?</a></li>
+                  
+                  <li><a href="/are_insects_healthy">Are they healthy?</a></li>
+                  
+                  <li><a href="/can_they_save_the_world">Can they save the world?</a></li>
+                  
+                  <li><a href="/who_is_eating_insects">Who eats insects?</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+            
+            
+            <div class="col-sm-4">
+              <div class="footer-nav-box bugs-green">
+                <a class="nav-headline" href="/how_can_i_try_insects">How can I try insects? </a>
+                <ul class="dropdown-menu" role="menu">
+                  
+                  
+                  <li><a href="/know_your_bugs">Know your bugs</a></li>
+                  
+                  <li><a href="/recipes">Prepare and cook them</a></li>
+                  
+                  <li><a href="/find_them_where_you_are">Find them where you are</a></li>
+                  
+                  
+                  
+                  <li><a href="/events">Tastings & Events</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+            
+            
+            <div class="col-sm-4">
+              <div class="footer-nav-box bugs-grey">
+                <a class="nav-headline" href="/whats_stopping_me">What's stopping me? </a>
+                <ul class="dropdown-menu" role="menu">
+                  
+                  
+                  <li><a href="/is_it_disgusting">Is it disgusting?</a></li>
+                  
+                  <li><a href="/are_they_dangerous">Are they dangerous?</a></li>
+                  
+                  <li><a href="/could_eating_insects_be_illegal">Could it be illegal?</a></li>
+                  
+                  <li><a href="/can_it_go_wrong">Can it go wrong?</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row row-eq-height">
+            <div class="col-sm-4 col-extender">
+              <div class="footer-nav-box bugs-white">
+                <a class="nav-headline" href="/who">Who's bugging me?</a>
+                <ul class="dropdown-menu" role="menu">
+                  
+                  
+                  
+                  <li><a href="/about">BUGSfeed team</a></li>
+                  
+                  
+                  
+                  <li><a href="/bugs_the_film">BUGS film team</a></li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="/nordic_food_lab">Nordic Food Lab team</a></li>
+                  
+                  
+                  
+                  
+                  
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4 col-extender">
+              <div class="footer-nav-box bugs-brown-bkg">
+                <h4>We need to talk!</h4>
+                <small>Contact the BUGSfeed team – maybe you'd like to see your own work up here?</small>
+                <a class="submit-button btn btn-primary" href="/contact">Give us a buzz</a>
+              </div>
+            </div>
+            <div class="col-sm-4 col-extender">
+              <div class="footer-nav-box danish">
+                <a href="http://www.danishdocumentary.com" target="_blank"><img src="img/danish_documentary.png" alt="Danish Documentary" /></a>
+                <a href="http://www.rosforth.com" target="_blank"><img src="img/rosforth.jpg" class="rosforth" alt="Rosforth Films" /></a >
+              </div>
+            </div>
+          </div>
+          
+        </div><!-- footer-nav -->
+        
+        
+      </div><!-- .main -->
+    </div><!-- .main-container -->
+    
+    <footer>
+      <div class="container">
+        
+        <div id="fb-root"></div>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 126739610711965,
+      channelUrl : "//danishdocumentary.nationbuilder.com/channel.html",
+      status     : true,
+      version    : "v2.3",
+      cookie     : true,
+      xfbml      : true
+    });
+  };
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.async = true;
+    js.src = "js/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+<script src="js/liquid.js"></script>
+<script src="js/tinymce-jquery.js"></script>
+
+  	<iframe src="#" width="1" height="1" style="display: none;"></iframe>
+
+
+  <script type="text/javascript">
+  _qevents.push(
+  	{ qacct:"p-5ftmjaPECGTTU" }
+  	);
+  </script>
+
+  <noscript>
+  <div style="display: none;"><img src="//pixel.quantserve.com/pixel?a.1=p-5ftmjaPECGTTU" height="1" width="1" alt="Quantcast"/></div>
+  </noscript>
+
+
+        
+        
+        
+        <div class="row">
+          
+          <div class="col-md-12 text-center">
+            <!-- The NationBuilder link below is required. If it is removed, we may add it back ourselves.
+You can style it or move it in different ways, but please leave it in the footer. -->
+<!--            <small>&copy;2015 <a href="http://www.danishdocumentary.com" target="_blank">Danish Documentary Production ApS</a> and <a href="http://www.rosforth.com/">Rosforth Films.</a> All rights reserved. 
+              Website created and managed by <a href="http://www.filmcampaign.org" target="_blank">Film & Campaign Ltd.</a> using <a href="http://nationbuilder.com/" target="_blank">NationBuilder</a> based on graphic design by <a href="http://torstenrasmussen.dk/" target="_blank">Torsten Høgh Rasmussen.</a> 
+              Unless attributed otherwise, still images are from Nordic Food Lab, from the film BUGS and from the BUGSfeed team, all licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0.</a> This website uses <a href="/cookies">cookies.</a>
+            </small> -->
+          </div>
+          
+        </div>
+      </div>
+      <!-- container -->
+    </footer>
+    
+    
+    <!--[if lt IE 9]>
+<script type="text/javascript" src="/javascripts/jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+jQuery.backstretch("http://d3n8a8pro7vhmx.cloudfront.net/danishdocumentary/sites/2/header_images/original/bugsfeed_bkg_limit_v2.jpg?1449094970", {speed: 0});
+</script>
+<![endif]-->
+    <style>
+      body {
+        background: url('img/bugsfeed_bkg_limit_v2.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+    </style>
+    
+    
+    <script src="js/bootstrap.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+        
+        if($.cookie('the_cookie') == 'bugsfeed_cookie'){
+          
+        }else{
+          
+          $("#disclaimer").fadeIn( 500 );
+          
+          setTimeout(function(){
+            $("#disclaimer").fadeOut( 500 );
+          }, 20000);
+          
+          $.cookie('the_cookie', 'bugsfeed_cookie', { expires: 14, path: '/' });
+          
+        }
+        
+        
+        $('.fancybox-media')
+        .attr('rel', 'gallery')
+        .fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none',
+          helpers		: {
+            title	: { type : 'inside' },
+            media : true,
+            overlay : {
+              locked : false
+            }
+          },
+          iframe: {
+            preload: true
+          },
+          width: 1600,
+          height: 900,
+          aspectRatio: true,
+          scrolling: 'no',
+          padding     : 0,
+          margin      : [20, 60, 20, 60]
+        });
+      });
+    </script>
+    
+    <script language="JavaScript">
+      $(function() { 
+        $.ajaxSetup({
+          complete: function() { 
+            $(".form-errors ul li:contains('Signup base')").hide(); 
+          }
+        }) 
+      });
+    </script>
+    
+    
+  </body>
+</html>
